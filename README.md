@@ -36,71 +36,75 @@ npm install wx-calendar --save
 
 #### daysProps
 
+该月每一天的配置
+
 ```js
 [
-    d: 14,                           // 要设定的 日
-    set: {                           // 该日配置
-    	class: 'custom-date-style',  	// 该日自定义类名，默认 ''
-    	disabled: true,              	// 不可选，默认 false
-    },
-    d: 1,
-    set: {
-    	class: 'custom-date-style',
-    	disabled: true,
-    },
+  d: 14, // 要设定的 日
+  set: { // 该日配置
+    class: 'custom-date-style', // 该日自定义类名，默认 ''
+    disabled: true, // 不可选，默认 false
+  },
+  d: 1,
+  set: {
+    class: 'custom-date-style',
+    disabled: true,
+  },
 ]
 ```
 
 #### props
 
+日历的配置
+
 ```js
 {
-	disabledOtherMonth: true,       // 非本月日期不可选，默认 false
-	showOtherMonth: true,			// 显示非本月日期，默认 false
-	single: true					// 显示‘双数’，如‘01’而不是‘1’，默认 false
+  disabledOtherMonth: true, // 非本月日期不可选，默认 false
+  showOtherMonth: true, // 显示非本月日期，默认 false
+  single: true // 显示‘双数’，如‘01’而不是‘1’，默认 false
 }
 ```
 
 #### loading
 
 ```js
-true | false						// 控制显示‘加载中’层
+true|false // 控制显示‘加载中’层
 ```
 
 #### weeks
 
 ```js
-['Sun','Mon','Tues','Wed','Thur','Fri','Sat']   // 自定义星期
+['Sun','Mon','Tues','Wed','Thur','Fri','Sat'] // 自定义星期
 ```
 
 ### 事件：
 
 #### onswitch
 
-切换年（月）触发的事件，返回如下
+切换年（月）触发的事件，返回值如下
 
-```
+```js
 // 返回切换后的年和月（可扩展）：
 event.detail = {year: "2020", month: "03"}
 ```
 
 #### onselect
 
-选择日期后触发的事件，返回如下
+选择日期后触发的事件，返回值如下
 
-```
-{
-    "week": 4,
-    "y": "2020",
-    "m": "02",
-    "d": "06",
-    "type": "on", // 该日期是否属于当月
-    "total": "2020-02-06",
-    "disabled": false,
-    "visible": true,
-    "selected": false,
-    "class": "",
-    "isToday": false
+```js
+event.detail = {
+    week: 4, // 星期
+    y: "2020", // 年
+    m: "02", // 月
+    d: "06", // 日
+    type: "on", // 该日期是否属于当月
+    total: "2020-02-06",
+    disabled: false,
+    visible: true,
+    selected: false,
+    class: "",
+    isToday: false
 }
 ```
 
