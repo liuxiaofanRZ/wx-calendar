@@ -24,11 +24,28 @@ npm install wx-calendar --save
 }
 ```
 
-接着就可以在 wxml 中直接使用组件
+接着就可以在 wxml 中直接使用组件，最简单的用法：
 
 ```html
 <calendar />
 ```
+
+<img src=" http://www.lxfcat.cn/calendar1.gif" alt="calendar1" style="zoom: 50%;" />
+
+复杂的用法：
+
+```js
+<calendar-dev
+  loading="{{loading}}"
+  props="{{props}}"
+  days-props="{{daysProps}}"
+  weeks="{{weeks}}"
+  bind:onswitch="onswitch"
+  bind:onselect="onselect"
+/>
+```
+
+<img src=" http://www.lxfcat.cn/calendar2.gif" alt="calendar2" style="zoom:50%;" />
 
 ## 文档
 
