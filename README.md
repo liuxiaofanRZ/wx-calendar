@@ -57,16 +57,21 @@ npm install wx-calendar --save
 
 ```js
 [
-  d: 14, // 要设定的 日
-  set: { // 该日配置
-    class: 'custom-date-style', // 该日自定义类名，默认 ''
-    disabled: true, // 不可选，默认 false
+  {
+    d: 14, // 要设定的 日
+    set: { // 该日配置
+      class: 'custom-date-style', // 该日自定义类名，默认 ''
+      disabled: true, // 不可选，默认 false
+    },
+  }，
+  {
+    d: 1,
+    set: {
+      class: 'custom-date-style',
+      disabled: true,
+    },  
   },
-  d: 1,
-  set: {
-    class: 'custom-date-style',
-    disabled: true,
-  },
+  ...
 ]
 ```
 
