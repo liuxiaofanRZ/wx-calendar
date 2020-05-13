@@ -35,7 +35,7 @@ npm install wx-calendar --save
 复杂的用法：
 
 ```js
-<calendar-dev
+<calendar
   loading="{{loading}}"
   props="{{props}}"
   days-props="{{daysProps}}"
@@ -63,7 +63,7 @@ npm install wx-calendar --save
       class: 'custom-date-style', // 该日自定义类名，默认 ''
       disabled: true, // 不可选，默认 false
     },
-  }，
+  },
   {
     d: 1,
     set: {
