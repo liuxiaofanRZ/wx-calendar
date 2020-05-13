@@ -1,8 +1,13 @@
 {
   "name": "wx-calendar",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a calendar for wx",
   "miniprogram": "dist",
+  "homepage":"https://github.com/liuxiaofanRZ/wx-calendar#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuxiaofanRZ/wx-calendar"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
