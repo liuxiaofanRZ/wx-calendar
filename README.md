@@ -30,7 +30,7 @@ npm install wx-calendar --save
 <calendar />
 ```
 
-<img src=" http://www.lxfcat.cn/calendar1.gif" alt="calendar1" style="zoom: 50%;" />
+<img src="https://www.lxfcat.cn/static/wx-calendar/preview_easy.gif" alt="preview_easy" style="zoom:50%;" />
 
 复杂的用法：
 
@@ -45,7 +45,7 @@ npm install wx-calendar --save
 />
 ```
 
-<img src=" http://www.lxfcat.cn/calendar2.gif" alt="calendar2" style="zoom:50%;" />
+<img src="https://www.lxfcat.cn/static/wx-calendar/preview_complex.gif" alt="preview_complex" style="zoom:50%;" />
 
 ## 文档
 
